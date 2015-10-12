@@ -1,0 +1,58 @@
+package poulsen.Model;
+
+/**
+ * Created by Mads on 08-10-2015.
+ */
+public class ModelLogin extends SimpleObserver<ModelLogin>
+{
+    String userID;
+    String password;
+    Integer DatabaseID;
+
+    public ModelLogin()
+    {
+        DatabaseID = null;
+        userID = null;
+        password = null;
+    }
+    public ModelLogin(String userID, String password)
+    {
+        DatabaseID = null;
+        this.userID = userID;
+        this.password = password;
+    }
+
+    public void setUser(String userID)
+    {
+        this.userID = userID;
+        notifyObservers(this);
+    }
+
+    public String getUser()
+    {
+        return userID;
+    }
+
+    public void setPassword(String password)
+    {
+        this.password = password;
+        notifyObservers(this);
+    }
+
+    public String getPassword()
+    {
+        return password;
+    }
+
+    public void setDatabaseID(Integer id)
+    {
+        this.DatabaseID = id;
+        notifyObservers(this);
+    }
+
+    public Integer getDatabaseID()
+    {
+        return DatabaseID;
+    }
+
+}
