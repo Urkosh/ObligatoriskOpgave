@@ -12,8 +12,8 @@ public class ControllerLogin
     public boolean handleLogin(String userID, String password)
     {
         boolean handled = false;
-        loginDB = new LoginDatabase();
-        if(loginDB.checkLogin(userID, password) == true)
+        //loginDB = new LoginDatabase();
+        //if(loginDB.checkLogin(userID, password) == true)
         {
             handled = true;
         }
@@ -24,8 +24,8 @@ public class ControllerLogin
     {
         boolean handled = false;
         ModelLogin login = new ModelLogin(userID, password);
-        loginDB = new LoginDatabase();
-        if(loginDB.createUser(login)>=0)
+        //loginDB = new LoginDatabase();
+       // if(loginDB.createUser(login)>=0)
         {
             handled = true;
         }
@@ -35,10 +35,10 @@ public class ControllerLogin
     public String handleRetrievePassword(String userID)
     {
         String password = null;
-        loginDB = new LoginDatabase();
-        if(loginDB.retrievePassword(userID) != null)
+        //loginDB = new LoginDatabase();
+       // if(loginDB.retrievePassword(userID) != null)
         {
-            password = loginDB.retrievePassword(userID);
+        //    password = loginDB.retrievePassword(userID);
         }
         return password;
     }

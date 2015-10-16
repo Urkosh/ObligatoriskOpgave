@@ -1,68 +1,121 @@
 package poulsen.Database;
 
 import android.content.ContentValues;
+import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.support.annotation.NonNull;
+import android.util.Log;
+
+import java.sql.SQLException;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.ListIterator;
 
 import poulsen.Model.ModelLogin;
 
 /**
  * Created by Mads on 09-10-2015.
  */
-public class LoginDatabase
-{
-    protected static final String TABLE = "Login";
-    protected static final String _ID = "_id";
-    protected static final String USERID = "userID";
-    protected static final String PASSWORD = "password";
+public class LoginDatabase {
+    private SQLiteDatabase database;
+    private DatabaseHelper dbHelper;
+    private String[] allColumns = {DatabaseHelper.COLUMN_ID, DatabaseHelper.COLUMN_USERID, DatabaseHelper.COLUMN_PASSWORD};
 
-    public LoginDatabase(){
-        //
+    public LoginDatabase(Context context) {
+        dbHelper = new DatabaseHelper(context);
     }
 
-    public long createUser(ModelLogin login)
-    {
-        SQLiteDatabase db = new DatabaseHelper().getWritableDatabase();
-        ContentValues values = new ContentValues();
-        if(login.getDatabaseID() > 0)
-            values.put(_ID, login.getDatabaseID());
-            values.put(PASSWORD, login.getPassword());
-            values.put(USERID, login.getUser());
+    public void open() throws SQLException {
+        database = dbHelper.getWritableDatabase();
+    }
 
-        long num = db.insert(TABLE, null, values);
-        db.close();
-        return num;
+    public void close() {
+        dbHelper.close();
+    }
+
+    public ModelLogin createUser(String userID, String password) {
+        ContentValues values = new ContentValues();
+        values.put(DatabaseHelper.COLUMN_USERID, userID);
+        values.put(DatabaseHelper.COLUMN_PASSWORD, password);
+        long insertId = database.insert(DatabaseHelper.TABLE_LOGIN, null, values);
+        Cursor cursor = database.query(DatabaseHelper.TABLE_LOGIN, allColumns, DatabaseHelper.COLUMN_ID + " = " + insertId, null, null, null, null);
+        cursor.moveToFirst();
+        ModelLogin newLogin = cursorToLogin(cursor);
+        cursor.close();
+
+        Log.d("User creation", "name: " + newLogin.getUser() + "password: " + newLogin.getPassword());
+        return newLogin;
     }
 
     public boolean checkLogin(String userID, String password)
     {
-        SQLiteDatabase db = new DatabaseHelper().getWritableDatabase();
-        Cursor cursor = db.query(TABLE, null, USERID + "=?", new String[]{userID}, null, null, null);
-        boolean loginWorked = false;
-        if(cursor.moveToFirst())
+        boolean loggedIn = false;
+        int index = 0;
+        while(index < getAllLogins().size())
         {
-            if(cursor.getString(cursor.getColumnIndex(PASSWORD)).compareTo(password) == 0)
+            if(getAllLogins().get(index).getUser().compareTo(userID) == 0)
             {
-                loginWorked = true;
+                if(getAllLogins().get(index).getPassword().compareTo(password) == 0)
+                {
+                    Log.d("checkLogin", "Login Achieved");
+                    loggedIn = true;
+                }
             }
 
+            index++;
         }
-        cursor.close();
-        db.close();
-        return loginWorked;
+
+        return loggedIn;
     }
 
     public String retrievePassword(String userID)
     {
-        SQLiteDatabase db = new DatabaseHelper().getWritableDatabase();
-        Cursor cursor = db.query(TABLE, null, USERID + "=?", new String [] {userID}, null, null, null);
-        String newPassword = null;
-        if(cursor.moveToFirst())
+        String lostPassword = "";
+        int index = 0;
+        while(index < getAllLogins().size())
         {
-            newPassword = cursor.getString(cursor.getColumnIndex(PASSWORD));
+            if(getAllLogins().get(index).getUser().compareTo(userID) == 0)
+            {
+                lostPassword = getAllLogins().get(index).getPassword();
+            }
+
+            index++;
         }
 
-        return newPassword;
+        return lostPassword;
     }
 
+    private List<ModelLogin> getAllLogins()
+    {
+        List<ModelLogin> logins = new LinkedList<ModelLogin>();
+
+        String query = "SELECT * FROM " + DatabaseHelper.TABLE_LOGIN;
+
+        Cursor cursor = database.rawQuery(query, null);
+        ModelLogin login = null;
+        if(cursor.moveToFirst())
+        {
+            do{
+                login = new ModelLogin();
+                login.setDatabaseID(cursor.getLong(0));
+                login.setUser(cursor.getString(1));
+                login.setPassword(cursor.getString(2));
+
+                logins.add(login);
+            } while(cursor.moveToNext());
+        }
+        Log.d("getAllLogins()", logins.toString());
+
+        return logins;
+    }
+    private ModelLogin cursorToLogin(Cursor cursor) {
+        ModelLogin login = new ModelLogin();
+        login.setDatabaseID(cursor.getLong(0));
+        login.setUser(cursor.getString(1));
+        login.setPassword(cursor.getString(2));
+        return login;
+    }
 }

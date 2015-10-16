@@ -2,23 +2,35 @@ package poulsen.obligatoriskopgvae;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import poulsen.Controller.ControllerLogin;
+import java.sql.SQLException;
+
+import poulsen.Database.LoginDatabase;
+import poulsen.Model.ModelLogin;
 import poulsen.obligatoriskopgvae.R;
 
 public class CreateUserActivity extends AppCompatActivity {
 
-    private ControllerLogin controller;
+    private LoginDatabase datasource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_user);
+        datasource = new LoginDatabase(this);
+        try{
+            datasource.open();
+        }
+        catch (SQLException openingException)
+        {
+
+        }
     }
 
     @Override
@@ -47,21 +59,19 @@ public class CreateUserActivity extends AppCompatActivity {
     {
         EditText textName = (EditText) findViewById(R.id.createUserName);
         EditText textPassword = (EditText) findViewById(R.id.createPassword);
-        String name = textName.toString();
-        String password = textPassword.toString();
+        String name = textName.getText().toString();
+        String password = textPassword.getText().toString();
+        ModelLogin user = datasource.createUser(name, password);
         Integer duration = Toast.LENGTH_SHORT;
-        boolean handled = controller.handleCreateUser(name, password);
-        if(handled)
+        if(user != null)
         {
-            String text = "@string/user_created";
-            Toast toast = Toast.makeText(getApplicationContext(), text, duration);
+            Toast toast = Toast.makeText(getApplicationContext(), R.string.user_created, duration);
             toast.show();
             finish();
         }
         else
         {
-            String text = "@string/user_was_not_created";
-            Toast toast = Toast.makeText(getApplicationContext(), text, duration);
+            Toast toast = Toast.makeText(getApplicationContext(), R.string.user_was_not_created, duration);
             toast.show();
         }
     }

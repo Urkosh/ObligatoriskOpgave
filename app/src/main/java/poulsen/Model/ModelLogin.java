@@ -7,7 +7,7 @@ public class ModelLogin extends SimpleObserver<ModelLogin>
 {
     String userID;
     String password;
-    Integer DatabaseID;
+    Long DatabaseID;
 
     public ModelLogin()
     {
@@ -44,13 +44,13 @@ public class ModelLogin extends SimpleObserver<ModelLogin>
         return password;
     }
 
-    public void setDatabaseID(Integer id)
+    public void setDatabaseID(Long id)
     {
         this.DatabaseID = id;
         notifyObservers(this);
     }
 
-    public Integer getDatabaseID()
+    public Long getDatabaseID()
     {
         return DatabaseID;
     }

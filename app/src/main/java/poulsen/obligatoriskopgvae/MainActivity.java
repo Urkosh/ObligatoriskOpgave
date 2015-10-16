@@ -12,16 +12,28 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import java.sql.SQLException;
+
 import poulsen.Controller.ControllerLogin;
+import poulsen.Database.LoginDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ControllerLogin controller;
+    private LoginDatabase datasource;
     private static MainActivity instance;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        datasource = new LoginDatabase(this);
+        try{
+            datasource.open();
+        }
+        catch (SQLException dataOpeningException)
+        {
+
+        }
+
     }
 
     @Override
@@ -53,15 +65,16 @@ public class MainActivity extends AppCompatActivity {
         String userID = loginID.getText().toString();
         String password = loginPassword.getText().toString();
         int duration = Toast.LENGTH_SHORT;
-        boolean handled = controller.handleLogin(userID, password);
+        boolean handled = datasource.checkLogin(userID, password);
         if(handled)
         {
             //Login
+            Toast toast = Toast.makeText(getApplicationContext(), R.string.login_achieved, duration);
+            toast.show();
         }
         else
         {
-            String text = "@string/login_failed";
-            Toast toast = Toast.makeText(getApplicationContext(), text, duration);
+            Toast toast = Toast.makeText(getApplicationContext(), R.string.login_failed, duration);
             toast.show();
         }
     }
@@ -77,20 +90,18 @@ public class MainActivity extends AppCompatActivity {
 
         EditText loginID = (EditText) findViewById(R.id.login_id);
         String userID = loginID.getText().toString();
-        String password = controller.handleRetrievePassword(userID);
+        String password = datasource.retrievePassword(userID);
         int duration = Toast.LENGTH_SHORT;
-        if(password != null)
+        if(password.compareTo("") != 0)
         {
             Toast toast = Toast.makeText(getApplicationContext(), password, duration);
             toast.show();
         }
         else
         {
-            String text = "@string/could_not_retrieve_password";
-            Toast toast = Toast.makeText(getApplicationContext(), text, duration);
+            Toast toast = Toast.makeText(getApplicationContext(), R.string.could_not_retrieve_password, duration);
             toast.show();
         }
     }
 
-    public static Context getContext(){ return instance.getApplicationContext();}
 }

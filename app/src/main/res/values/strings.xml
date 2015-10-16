@@ -17,4 +17,5 @@
     <string name="could_not_retrieve_password">Kunne ikke genskabbe password</string>
     <string name="title_activity_create_user">Opret Bruger</string>
     <string name="back">Tilbage</string>
+    <string name="login_achieved">Du er nu logged ind</string>
 </resources>

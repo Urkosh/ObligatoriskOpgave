@@ -3,8 +3,10 @@ package poulsen.Database;
 /**
  * Created by Mads on 09-10-2015.
  */
+import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import poulsen.obligatoriskopgvae.MainActivity;
 
@@ -12,27 +14,33 @@ import poulsen.obligatoriskopgvae.MainActivity;
 final class DatabaseHelper extends SQLiteOpenHelper {
 
     @SuppressWarnings("unused")
-    private static final String TAG = DatabaseHelper.class.getSimpleName();
-    private static final String DATABASE_NAME = "TapCounter";
+    protected static final String TABLE_LOGIN = "login";
+    protected static final String COLUMN_ID = "_id";
+    protected static final String COLUMN_USERID = "user_id";
+    protected static final String COLUMN_PASSWORD = "password";
+
+    private static final String DATABASE_NAME = "logins.db";
     private static final int DATABASE_VERSION = 1;
 
-    public DatabaseHelper() {
-        super(MainActivity.getContext(), DATABASE_NAME, null, DATABASE_VERSION);
+    private static final String DATABASE_CREATE = "CREATE TABLE " + TABLE_LOGIN + "(" +
+            COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
+            COLUMN_USERID + " TEXT, " +
+            COLUMN_PASSWORD + " TEXT);";
+
+    public DatabaseHelper(Context context) {
+        super(context, DATABASE_NAME, null, DATABASE_VERSION);
     }
 
     @Override
     public void onCreate(SQLiteDatabase database) {
-
-        final String counter = "CREATE TABLE " + LoginDatabase.TABLE + "(" +
-                LoginDatabase._ID + " integer primary key, " +
-                LoginDatabase.USERID + " text, ";
-        database.execSQL(counter);
-
+        database.execSQL(DATABASE_CREATE);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        // first iteration. do nothing.
+        Log.w(DatabaseHelper.class.getName(), "Upgrading database from version " + oldVersion + "to " +newVersion + ", which will destroy all old data");
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_LOGIN);
+        onCreate(db);
     }
 
 }
