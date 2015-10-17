@@ -68,7 +68,8 @@ public class MainActivity extends AppCompatActivity {
         boolean handled = datasource.checkLogin(userID, password);
         if(handled)
         {
-            //Login
+            Intent loggedInActivity = new Intent(getApplicationContext(), LoggedInActivity.class);
+            startActivity(loggedInActivity);
             Toast toast = Toast.makeText(getApplicationContext(), R.string.login_achieved, duration);
             toast.show();
         }

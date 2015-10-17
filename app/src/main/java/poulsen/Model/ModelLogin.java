@@ -12,8 +12,8 @@ public class ModelLogin extends SimpleObserver<ModelLogin>
     public ModelLogin()
     {
         DatabaseID = null;
-        userID = null;
-        password = null;
+        userID = "";
+        password = "";
     }
     public ModelLogin(String userID, String password)
     {

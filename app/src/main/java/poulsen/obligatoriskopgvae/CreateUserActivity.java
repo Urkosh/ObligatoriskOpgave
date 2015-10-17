@@ -18,7 +18,6 @@ import poulsen.obligatoriskopgvae.R;
 public class CreateUserActivity extends AppCompatActivity {
 
     private LoginDatabase datasource;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -63,7 +62,7 @@ public class CreateUserActivity extends AppCompatActivity {
         String password = textPassword.getText().toString();
         ModelLogin user = datasource.createUser(name, password);
         Integer duration = Toast.LENGTH_SHORT;
-        if(user != null)
+        if(user.getUser().compareTo(name) == 0)
         {
             Toast toast = Toast.makeText(getApplicationContext(), R.string.user_created, duration);
             toast.show();

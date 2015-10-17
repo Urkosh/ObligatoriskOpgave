@@ -20,7 +20,7 @@ final class DatabaseHelper extends SQLiteOpenHelper {
     protected static final String COLUMN_PASSWORD = "password";
 
     private static final String DATABASE_NAME = "logins.db";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     private static final String DATABASE_CREATE = "CREATE TABLE " + TABLE_LOGIN + "(" +
             COLUMN_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
@@ -38,8 +38,9 @@ final class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        Log.w(DatabaseHelper.class.getName(), "Upgrading database from version " + oldVersion + "to " +newVersion + ", which will destroy all old data");
+        Log.w(DatabaseHelper.class.getName(), "Upgrading database from version " + oldVersion + "to " + newVersion + ", which will destroy all old data");
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_LOGIN);
+
         onCreate(db);
     }
 

@@ -1,21 +1,51 @@
 <resources>
-    <string name="app_name">ObligatoriskOpgave</string>
+    <!-- Titles -->
+    <string name="app_name">Obligatorisk Opgave</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_create_user">Opret Bruger</string>
+    <!-- End of Titles -->
 
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
-
-    <string name="title_activity_login">LoginActivity</string>
-    <string name="login_button">Login</string>
+    <!-- Default Content -->
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <!-- End of Default Content -->
+
+    <!-- Strings for Settings -->
+    <string name="action_settings">Settings</string>
+    <!-- End of Strings for Settings -->
+
+    <!-- Buttons for Login Screen -->
+    <string name="create_user">Opret Bruger</string>
+    <string name="login_button">Login</string>
+    <string name="retrieve_password">Genskab Password</string>
+    <!-- End of Buttons for Login Screen -->
+
+    <!-- Hints -->
     <string name="hint_put_password">Put Password</string>
     <string name="hint_put_name">Put Name</string>
-    <string name="create_user">Opret Bruger</string>
-    <string name="retrieve_password">Genskab Password</string>
+    <!-- End of Hints -->
+
+    <!-- Toast message-->
     <string name="login_failed">Kunne ikke logge ind</string>
     <string name="user_created">Bruger oprettet</string>
     <string name="user_was_not_created">Bruger blev ikke oprettet</string>
     <string name="could_not_retrieve_password">Kunne ikke genskabbe password</string>
-    <string name="title_activity_create_user">Opret Bruger</string>
     <string name="back">Tilbage</string>
     <string name="login_achieved">Du er nu logged ind</string>
+    <!-- End of Toast messages-->
+
+    <!-- Strings for LoggedInActivity -->
+    <string name="logged_in">Du er nu logged ind</string>
+    <!-- End for String for LoggedInActivity -->
+
+    <!-- String Array for Login -->
+    <string-array name="registered__user_login">
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+        <item></item>
+    </string-array>
+    <string name="title_activity_logged_in">LoggedInActivity</string>
 </resources>
