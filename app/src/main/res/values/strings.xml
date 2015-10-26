@@ -50,5 +50,5 @@
     <string name="title_activity_logged_in">LoggedInActivity</string>
     <string name="title_activity_recover_password">RecoverPassword</string>
 
-    <string name="hello_world">Hello world!</string>
+
 </resources>
