@@ -24,6 +24,10 @@
             android:name=".LoggedInActivity"
             android:label="@string/title_activity_logged_in" >
         </activity>
+        <activity
+            android:name=".RecoverPassword"
+            android:label="@string/title_activity_recover_password" >
+        </activity>
     </application>
 
 </manifest>

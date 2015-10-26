@@ -89,20 +89,8 @@ public class MainActivity extends AppCompatActivity {
     public void retrievePassword(View view)
     {
 
-        EditText loginID = (EditText) findViewById(R.id.login_id);
-        String userID = loginID.getText().toString();
-        String password = datasource.retrievePassword(userID);
-        int duration = Toast.LENGTH_SHORT;
-        if(password.compareTo("") != 0)
-        {
-            Toast toast = Toast.makeText(getApplicationContext(), password, duration);
-            toast.show();
-        }
-        else
-        {
-            Toast toast = Toast.makeText(getApplicationContext(), R.string.could_not_retrieve_password, duration);
-            toast.show();
-        }
+        Intent recoverPasswordView = new Intent(getApplicationContext(), RecoverPassword.class);
+        startActivity(recoverPasswordView);
     }
 
 }
