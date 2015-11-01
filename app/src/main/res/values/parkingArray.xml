@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Parking">
+        <item name="A15">Parkering\n\nA15. Parkeringsplads til bil for langt fra indgangen (gåafstand over 25 m ).</item>
+        <item name="A16">A16. Af-/påstigningsområde langt fra indgangen (mere end 5 m). Notér, om der er en låst bom.</item>
+        <item name="A17">A17. Manglende beskyttelse mod vejr og vind i af-/påstigningsområdet.</item>
+        <item name="A18">A18. Ustabil eller glat belægning på parkeringspladsen (løst grus, sand, ler etc.).</item>
+    </string-array>
+</resources>

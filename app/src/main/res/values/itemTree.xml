@@ -2,215 +2,210 @@
 <resources>
  <string-array name="Questions">
     <!-- String Arrays for Questions -->
-    <string-array name="Parking">
-        <string name="A15">Parkering\n\nA15. Parkeringsplads til bil for langt fra indgangen (gåafstand over 25 m ).</string>
-        <string name="A16">A16. Af-/påstigningsområde langt fra indgangen (mere end 5 m). Notér, om der er en låst bom.</string>
-        <string name="A17">A17. Manglende beskyttelse mod vejr og vind i af-/påstigningsområdet.</string>
-        <string name="A18">A18. Ustabil eller glat belægning på parkeringspladsen (løst grus, sand, ler etc.).</string>
-    </string-array>
 
-    <string-array name="Seats">
-        <string name="A20">Siddepladser\n\nA20. Ingen/for få siddepladser (Skal være for hver 25. m fra indgangen, herefter mindst for hver 100 m).</string>
-        <string name="A21">A21. Lav/høj siddehøjde (45 cm)/ingen armlæn.</string>
-        <string name="A22">A22. Ujævn/ustabil belægning ved siddepladser.</string>
-        <string name="A23">A23. Utilstrækkelig plads til manøvrering ved siddepladser (150 x 150 cm).</string>
-        <string name="A24">A24. Møbler placeret på adgangsstier.</string>
-    </string-array>
+
+    <item name="Seats">
+        <item name="A20">Siddepladser\n\nA20. Ingen/for få siddepladser (Skal være for hver 25. m fra indgangen, herefter mindst for hver 100 m).</item>
+        <item name="A21">A21. Lav/høj siddehøjde (45 cm)/ingen armlæn.</item>
+        <item name="A22">A22. Ujævn/ustabil belægning ved siddepladser.</item>
+        <item name="A23">A23. Utilstrækkelig plads til manøvrering ved siddepladser (150 x 150 cm).</item>
+        <item name="A24">A24. Møbler placeret på adgangsstier.</item>
+    </item>
 
 
 
     <!-- Questions -->
-    <string name="A1">Generelt\n\nA1. Adgangsstier smallere end 150 cm.</string>
-    <string name="A2">A2. Uregelmæssig/ujævn belægning (uregelmæssigheder i overfladen, samlinger, skrående partier sprækker, huller dybere end 5 mm ).</string>
-    <string name="A3">A3. Ustabil belægning (løst grus, sand, ler osv.). Markeres, hvis det giver vanskeligheder f.eks. ved brug af kørestol eller rollator.</string>
-    <string name="A4">A4. Stejle hældninger (over 1:20). Omfatter ikke rampe ved indgang. Dette vurderes under B22.</string>
-    <string name="A5">A5. Adgangsstier med trappetrin. Alternativ rute med rampe, som opfylder kravene, accepteres.</string>
-    <string name="A6">A6. Mangel på/utilstrækkelige taktileadvarsler ved niveauforskelle/andre farer.</string>
-    <string name="A7">A7. Høje fortovskantsten (højere end 4 cm).</string>
-    <string name="A8">A8. Stejle overkørselsramper (op- og nedkørsel) ved fortovskantsten.</string>
-    <string name="A9">A9. Dårligt drænede adgangsstier.</string>
-    <string name="A10">A10. Manglende gelænder ved stejle hældninger. Gelænder i en side er tilstrækkeligt. Definition af ”stejl”, se A4.</string>
-    <string name="A11">A11. Manglende/for langt mellem hvileplaner på hældninger (mere end 6 m mellem hvileplaner).</string>
-    <string name="A12">A12. Dårlig/ujævn/blændende belysning langs adgangsstier. Notér, om vurderingen skete i dagslys eller i mørke!</string>
-    <string name="A13">A13. Dårlig/ujævn/blændende belysning af adgangsstiers belægning.</string>
-    <string name="A14">A14. Komplicerede/ulogiske adgangsstier til/fra indgang.</string>
+    <item name="A1">Generelt\n\nA1. Adgangsstier smallere end 150 cm.</item>
+    <item name="A2">A2. Uregelmæssig/ujævn belægning (uregelmæssigheder i overfladen, samlinger, skrående partier sprækker, huller dybere end 5 mm ).</item>
+    <item name="A3">A3. Ustabil belægning (løst grus, sand, ler osv.). Markeres, hvis det giver vanskeligheder f.eks. ved brug af kørestol eller rollator.</item>
+    <item name="A4">A4. Stejle hældninger (over 1:20). Omfatter ikke rampe ved indgang. Dette vurderes under B22.</item>
+    <item name="A5">A5. Adgangsstier med trappetrin. Alternativ rute med rampe, som opfylder kravene, accepteres.</item>
+    <item name="A6">A6. Mangel på/utilstrækkelige taktileadvarsler ved niveauforskelle/andre farer.</item>
+    <item name="A7">A7. Høje fortovskantsten (højere end 4 cm).</item>
+    <item name="A8">A8. Stejle overkørselsramper (op- og nedkørsel) ved fortovskantsten.</item>
+    <item name="A9">A9. Dårligt drænede adgangsstier.</item>
+    <item name="A10">A10. Manglende gelænder ved stejle hældninger. Gelænder i en side er tilstrækkeligt. Definition af ”stejl”, se A4.</item>
+    <item name="A11">A11. Manglende/for langt mellem hvileplaner på hældninger (mere end 6 m mellem hvileplaner).</item>
+    <item name="A12">A12. Dårlig/ujævn/blændende belysning langs adgangsstier. Notér, om vurderingen skete i dagslys eller i mørke!</item>
+    <item name="A13">A13. Dårlig/ujævn/blændende belysning af adgangsstiers belægning.</item>
+    <item name="A14">A14. Komplicerede/ulogiske adgangsstier til/fra indgang.</item>
+    <item name="A15">A15. Parking</item>
+    <item name="A19">Items a19 &#8211; a24 vurderes kun for ejendomme med flere boliger.\n\nA19. Skiltet/markeret parkering til personer med funktionsnedsættelse inden for 10 m fra indgangen mangler.</item>
 
-    <string name="A19">Items a19 &#8211; a24 vurderes kun for ejendomme med flere boliger.\n\nA19. Skiltet/markeret parkering til personer med funktionsnedsættelse inden for 10 m fra indgangen mangler.</string>
+    <item name="A25">Andet\n\nA25. Affaldsrum/affaldsbeholder kan kun nås ved at forcere trappetrin/anden niveauforskel (over 15mm). Bemærk, at adgangsstier, der vurderes andet steds ikke skal vurderes en gang til her.</item>
+    <item name="A26">A26. Postkasse/brevsprække kan kun nås ved at forcere trappetrin/anden niveauforskel (over 15 mm).</item>
 
-    <string name="A25">Andet\n\nA25. Affaldsrum/affaldsbeholder kan kun nås ved at forcere trappetrin/anden niveauforskel (over 15mm). Bemærk, at adgangsstier, der vurderes andet steds ikke skal vurderes en gang til her.</string>
-    <string name="A26">A26. Postkasse/brevsprække kan kun nås ved at forcere trappetrin/anden niveauforskel (over 15 mm).</string>
+    <item name="A27">A27. Affaldsbeholder er svær at nå (anden højde udenfor intervallet 80 &#8211; 100 cm over jorden eller andet problem).\nDette angår beholderens åbning.</item>
 
-    <string name="A27">A27. Affaldsbeholder er svær at nå (anden højde udenfor intervallet 80 &#8211; 100 cm over jorden eller andet problem).\nDette angår beholderens åbning.</string>
+    <item name="A28">A28. Postkasse er svær at nå (anden højde end intervallet 80 &#8211; 110 cm over jorden, eller andet problem).</item>
 
-    <string name="A28">A28. Postkasse er svær at nå (anden højde end intervallet 80 &#8211; 110 cm over jorden, eller andet problem).</string>
+    <item name="B1">Omfatter trapper, ramper, elevatorer udendørs og/eller i trappeopgange. Trapper i selve boligen vurderes under C. INDENDØRSMILJØ. Bemærk, at udendørs siddeplads vurderes under et særlig afsnit nedenfor. Alle mål skal være frie mål. Notér, om der er flere alternative indgange og i så fald hvilken/hvilke der bruges hyppigst.\n\nGenerelt\n\nB1. Smalle døråbninger (smallere end 87 cm).\n Gælder samtlige døre fra indgangsdør til lejlighedsdør samt dør til elevator</item>
 
-    <string name="B1">Omfatter trapper, ramper, elevatorer udendørs og/eller i trappeopgange. Trapper i selve boligen vurderes under C. INDENDØRSMILJØ. Bemærk, at udendørs siddeplads vurderes under et særlig afsnit nedenfor. Alle mål skal være frie mål. Notér, om der er flere alternative indgange og i så fald hvilken/hvilke der bruges hyppigst.\n\nGenerelt\n\nB1. Smalle døråbninger (smallere end 87 cm).\n Gælder samtlige døre fra indgangsdør til lejlighedsdør samt dør til elevator</string>
+    <item name="B2">B2. Høje dørtrin og/eller trappetrin ved indgang (mere end 15 mm).\n\nGummiliste: Tryk ned og mål det højeste sted.</item>
 
-    <string name="B2">B2. Høje dørtrin og/eller trappetrin ved indgang (mere end 15 mm).\n\nGummiliste: Tryk ned og mål det højeste sted.</string>
-
-    <string name="B3">B3. Utilstrækkelig plads til manøvrering ved døre
+    <item name="B3">B3. Utilstrækkelig plads til manøvrering ved døre
 (frit område på mindst 150 × 150 cm. Desuden
 skal der ved hovedindgangen være 70 cm ved dørens
-åbningsside og ved døren til lejligheden skal der være 50 cm ved dørens åbningsside. Dette gælder både indenfor/udenfor døren/dørene).\n\nBemærk forskellen mellem B3 og B5.</string>
-    <string name="B4">B4. Dørbladets svingområde udgør en barriere. Gælder dørblad, der er ”i vejen” ved åbning og/eller lukning.</string>
+åbningsside og ved døren til lejligheden skal der være 50 cm ved dørens åbningsside. Dette gælder både indenfor/udenfor døren/dørene).\n\nBemærk forskellen mellem B3 og B5.</item>
+    <item name="B4">B4. Dørbladets svingområde udgør en barriere. Gælder dørblad, der er ”i vejen” ved åbning og/eller lukning.</item>
 
-    <string name="B5">B5. Der mangler hvileplan/repos foran indgangsdøre (150 x 150 cm).\nGælder plan flade: Bemærk forskellen mellem B3 og B5.</string>
+    <item name="B5">B5. Der mangler hvileplan/repos foran indgangsdøre (150 x 150 cm).\nGælder plan flade: Bemærk forskellen mellem B3 og B5.</item>
 
-    <string name="B6">B6. Der er tunge døre uden automatik.</string>
-    <string name="B7">B7. Der er automatisk døråbner på sidehængte døre.</string>
-    <string name="B8">B8. Der er uhensigtsmæssig udformning af glaspartier.</string>
-    <string name="B9">B9. Der er døre som ikke forbliver åbne eller som lukkes hurtigt.</string>
-    <string name="B10">B10. Der er døre som ikke kan fastholdes i åben stilling. (låseanordning/dørspærre kræves).</string>
-    <string name="B11">B11. Kompliceret/ulogisk åbningsprocedure. Omfatter også dørtelefon.</string>
+    <item name="B6">B6. Der er tunge døre uden automatik.</item>
+    <item name="B7">B7. Der er automatisk døråbner på sidehængte døre.</item>
+    <item name="B8">B8. Der er uhensigtsmæssig udformning af glaspartier.</item>
+    <item name="B9">B9. Der er døre som ikke forbliver åbne eller som lukkes hurtigt.</item>
+    <item name="B10">B10. Der er døre som ikke kan fastholdes i åben stilling. (låseanordning/dørspærre kræves).</item>
+    <item name="B11">B11. Kompliceret/ulogisk åbningsprocedure. Omfatter også dørtelefon.</item>
 
-    <string name="B12">Trapper\n\nB12. Trapper er den eneste mulighed for at komme fra et sted til et andet ( elevator/rampe mangler).</string>
-    <string name="B13">B13. Trappetrin med utilstrækkelig dybde (mindre end 30 cm) eller med ujævn dybde.</string>
-    <string name="B14">B14. Høje, lave og/eller uregelmæssige trappetrin (anden højde end 15 cm).</string>
-    <string name="B15">B15. Trappe med trinfremspring/trappe uden stødtrin (dvs. åbne trappetrin).</string>
+    <item name="B12">Trapper\n\nB12. Trapper er den eneste mulighed for at komme fra et sted til et andet ( elevator/rampe mangler).</item>
+    <item name="B13">B13. Trappetrin med utilstrækkelig dybde (mindre end 30 cm) eller med ujævn dybde.</item>
+    <item name="B14">B14. Høje, lave og/eller uregelmæssige trappetrin (anden højde end 15 cm).</item>
+    <item name="B15">B15. Trappe med trinfremspring/trappe uden stødtrin (dvs. åbne trappetrin).</item>
 
-    <string name="B16">B16. Gelænder mangler/findes kun i en side. Notér, om der mangler gelænder i den ene eller begge sider.</string>
+    <item name="B16">B16. Gelænder mangler/findes kun i en side. Notér, om der mangler gelænder i den ene eller begge sider.</item>
 
-    <string name="B17">B17. For kort gelænder (skal fortsætte 30 cm før/efter trappen) og/ eller afbrudt gelænder, der ikke følger trappeafsatsen rundt.\nKravene anses som opfyldt, hvis et af gelænderne fortsætter uafbrudt og rundt langs trappeafsatsen. </string>
+    <item name="B17">B17. For kort gelænder (skal fortsætte 30 cm før/efter trappen) og/ eller afbrudt gelænder, der ikke følger trappeafsatsen rundt.\nKravene anses som opfyldt, hvis et af gelænderne fortsætter uafbrudt og rundt langs trappeafsatsen. </item>
 
-    <string name="B18">B18. For højt/lavt placeret gelænder (højere/lavere end intervallet 80 &#8211; 90 cm).\n\nMål fra trappetrinnets midte.</string>
-    <string name="B19">B19. Der mangler taktil markering af trappe på gangareal</string>
-    <string name="B20">B20. Visuel udformning af trappens belægning camouflerer trappetrinnet.</string>
-    <string name="B21">B21. Dårlig belysning af gangareal og/eller gelænder. Bemærk også, om det lyser længe nok ved automatisk lys.</string>
-    <string name="B22">Ramper\n\nB22. For stejle hældninger (over 1:20).</string>
-    <string name="B23">B23. Der mangler eller er for kort/for langt mellem hvileplaner (2 m) ved hældninger (højst 6 m mellem hvileplaner).</string>
-    <string name="B24">B24. Der mangler gelænder (kræves i begge sider uden afbrud).</string>
-    <string name="B25">B25. Der mangler afkørselssikring helt eller delvist (kanter lavere end 5 cm er for lave og vurderes som manglende).</string>
-    <string name="B26">Elevatorer\n\nB26. Når elevatoren standser er der niveauforskel mellem elevator og det tilsluttende gulv (mere end 1 cm. forskel). Elevatordørens bredde vurderes under B1!</string>
-    <string name="B27">B27. Bred sprække mellem elevatoren og det tilsluttende gulv (mere end 3 cm).</string>
-    <string name="B28">B28. Tunge døre uden automatik.</string>
-    <string name="B29">B29. Dørautomatik på sidehængte døre.</string>
-    <string name="B30">B30. Døre som ikke forbliver i åben position/lukker hurtigt.</string>
-    <string name="B31">B31. Døre kan ikke fastholdes i åben stilling (der mangler låseanordning).</string>
-    <string name="B32">B32. Elevatoren stopper brat.</string>
-    <string name="B33">B33. Der mangler gelænder i elevatoren.</string>
-    <string name="B34">B34. Der mangler siddeplads i elevatoren.</string>
-    <string name="B35">B35. Elevatoren er trang (under 110 x 170 cm).</string>
-    <string name="B36">B36. Ulogisk udformning af betjeningsanordninger. Notér, om betjeningsanordninger skal aktiveres. F.eks. at knapper, skal holdes inde under hele kørslen!</string>
-    <string name="B37">B37. Betjeningsanordninger placeret for højt/lavt (andet mål end intervallet 90 &#8211; 120 cm.). Gælder både uden for og inde i elevatoren.</string>
-    <string name="B38">B38. Betjeningsanordningens udformning kræver god håndfunktion.</string>
-    <string name="B39">B39. Der mangler auditivt signal, når elevatoren ankommer.</string>
-    <string name="B40">B40. Der mangler visuelt signal, når elevatoren ankommer.</string>
-    <string name="B41">B41. Elevatoren mangler signaler der angiver elevatorens retning.</string>
-    <string name="B42">Udendørs siddeplads/terrasse/altan mm.\n\nB42. Udendørs siddeplads/altan for smal (under 150 cm). Kræver et særligt sted, ikke bare en græsplæne eller lign. Notér, om terrasse-/altandør benyttes som indgang.</string>
+    <item name="B18">B18. For højt/lavt placeret gelænder (højere/lavere end intervallet 80 &#8211; 90 cm).\n\nMål fra trappetrinnets midte.</item>
+    <item name="B19">B19. Der mangler taktil markering af trappe på gangareal</item>
+    <item name="B20">B20. Visuel udformning af trappens belægning camouflerer trappetrinnet.</item>
+    <item name="B21">B21. Dårlig belysning af gangareal og/eller gelænder. Bemærk også, om det lyser længe nok ved automatisk lys.</item>
+    <item name="B22">Ramper\n\nB22. For stejle hældninger (over 1:20).</item>
+    <item name="B23">B23. Der mangler eller er for kort/for langt mellem hvileplaner (2 m) ved hældninger (højst 6 m mellem hvileplaner).</item>
+    <item name="B24">B24. Der mangler gelænder (kræves i begge sider uden afbrud).</item>
+    <item name="B25">B25. Der mangler afkørselssikring helt eller delvist (kanter lavere end 5 cm er for lave og vurderes som manglende).</item>
+    <item name="B26">Elevatorer\n\nB26. Når elevatoren standser er der niveauforskel mellem elevator og det tilsluttende gulv (mere end 1 cm. forskel). Elevatordørens bredde vurderes under B1!</item>
+    <item name="B27">B27. Bred sprække mellem elevatoren og det tilsluttende gulv (mere end 3 cm).</item>
+    <item name="B28">B28. Tunge døre uden automatik.</item>
+    <item name="B29">B29. Dørautomatik på sidehængte døre.</item>
+    <item name="B30">B30. Døre som ikke forbliver i åben position/lukker hurtigt.</item>
+    <item name="B31">B31. Døre kan ikke fastholdes i åben stilling (der mangler låseanordning).</item>
+    <item name="B32">B32. Elevatoren stopper brat.</item>
+    <item name="B33">B33. Der mangler gelænder i elevatoren.</item>
+    <item name="B34">B34. Der mangler siddeplads i elevatoren.</item>
+    <item name="B35">B35. Elevatoren er trang (under 110 x 170 cm).</item>
+    <item name="B36">B36. Ulogisk udformning af betjeningsanordninger. Notér, om betjeningsanordninger skal aktiveres. F.eks. at knapper, skal holdes inde under hele kørslen!</item>
+    <item name="B37">B37. Betjeningsanordninger placeret for højt/lavt (andet mål end intervallet 90 &#8211; 120 cm.). Gælder både uden for og inde i elevatoren.</item>
+    <item name="B38">B38. Betjeningsanordningens udformning kræver god håndfunktion.</item>
+    <item name="B39">B39. Der mangler auditivt signal, når elevatoren ankommer.</item>
+    <item name="B40">B40. Der mangler visuelt signal, når elevatoren ankommer.</item>
+    <item name="B41">B41. Elevatoren mangler signaler der angiver elevatorens retning.</item>
+    <item name="B42">Udendørs siddeplads/terrasse/altan mm.\n\nB42. Udendørs siddeplads/altan for smal (under 150 cm). Kræver et særligt sted, ikke bare en græsplæne eller lign. Notér, om terrasse-/altandør benyttes som indgang.</item>
 
-    <string name="B43">B43. Smal dør (smallere end 87 cm fri passage).</string>
+    <item name="B43">B43. Smal dør (smallere end 87 cm fri passage).</item>
 
-    <string name="B44">B44. Højt dørtrin/niveauforskel/trappetrin (mere end 15 mm).</string>
-    <string name="B45">B45. Brede sprækker i gulvet (over 5 mm).</string>
-    <string name="B46">B46. Stejl udjævning af niveauforskel. (hældning over 1:20).</string>
+    <item name="B44">B44. Højt dørtrin/niveauforskel/trappetrin (mere end 15 mm).</item>
+    <item name="B45">B45. Brede sprækker i gulvet (over 5 mm).</item>
+    <item name="B46">B46. Stejl udjævning af niveauforskel. (hældning over 1:20).</item>
 
-    <string name="C1">Generelt\n\nC1. Trappetrin/dørtrin/niveauforskelle mellem rum/gulvflader (mere end 15 mm.).\n\nGummiliste: Tryk ned og mål det højeste sted.</string>
-    <string name="C2">C2. Komplicerede/ulogiske gangarealer.</string>
+    <item name="C1">Generelt\n\nC1. Trappetrin/dørtrin/niveauforskelle mellem rum/gulvflader (mere end 15 mm.).\n\nGummiliste: Tryk ned og mål det højeste sted.</item>
+    <item name="C2">C2. Komplicerede/ulogiske gangarealer.</item>
 
-    <string name="C3">C3. Smalle passager i forhold til fast indretning/bygningsudformning (mindre end 130 cm).\n\nBemærk forskellen mellem item C3 og C5.</string>
+    <item name="C3">C3. Smalle passager i forhold til fast indretning/bygningsudformning (mindre end 130 cm).\n\nBemærk forskellen mellem item C3 og C5.</item>
 
-    <string name="C4">C4. Smalle døre (mindre end 87 cm), fri passage. Gælder også buer etc. uden dør/dørblad.</string>
+    <item name="C4">C4. Smalle døre (mindre end 87 cm), fri passage. Gælder også buer etc. uden dør/dørblad.</item>
 
-    <string name="C5">C5. Utilstrækkelig plads til manøvrering i forhold til møblering/flytbar indretning (mindre end 150 x150 cm). Bemærk forskellen mellem item C3 og C5.</string>
+    <item name="C5">C5. Utilstrækkelig plads til manøvrering i forhold til møblering/flytbar indretning (mindre end 150 x150 cm). Bemærk forskellen mellem item C3 og C5.</item>
 
-    <string name="C6">C6. Utilstrækkeligt plads til manøvrering, hvor det er nødvendigt at vende (mindre end 150 x 150 cm).\n (gælder ikke badeværelse, vurderes separat).</string>
-    <string name="C7">C7. Uhensigtsmæssig udformning af garderober/tøjskabe.</string>
+    <item name="C6">C6. Utilstrækkeligt plads til manøvrering, hvor det er nødvendigt at vende (mindre end 150 x 150 cm).\n (gælder ikke badeværelse, vurderes separat).</item>
+    <item name="C7">C7. Uhensigtsmæssig udformning af garderober/tøjskabe.</item>
 
-    <string name="C8">Trapper\n\nC8 – C15 gælder trapper mellem etager hvor der ikke er elevator. Flere items kan markeres.\n\nC8. Trappe til overetage med nødvendige boligfunktioner.</string>
-    <string name="C9">C9. Trappe til kælder med nødvendige boligfunktioner.</string>
+    <item name="C8">Trapper\n\nC8 – C15 gælder trapper mellem etager hvor der ikke er elevator. Flere items kan markeres.\n\nC8. Trappe til overetage med nødvendige boligfunktioner.</item>
+    <item name="C9">C9. Trappe til kælder med nødvendige boligfunktioner.</item>
 
-    <string name="C10">C10. Der er trappe, men alle nødvendige boligfunktioner er i stueetagen.</string>
-    <string name="C11">C11. Trappetrin med utilstrækkelig dybde/uregelmæssig dybde (mindre end 30 cm).</string>
-    <string name="C12">C12. Høje, lave og/eller uregelmæssigestødtrin (anden højde end 15 cm).</string>
-    <string name="C13">C13. Udskudte trinfremspring/trappe uden stødtrin (dvs. åbne trappetrin).</string>
-    <string name="C14">C14. Gelænder mangler/findes kun i en side.</string>
+    <item name="C10">C10. Der er trappe, men alle nødvendige boligfunktioner er i stueetagen.</item>
+    <item name="C11">C11. Trappetrin med utilstrækkelig dybde/uregelmæssig dybde (mindre end 30 cm).</item>
+    <item name="C12">C12. Høje, lave og/eller uregelmæssigestødtrin (anden højde end 15 cm).</item>
+    <item name="C13">C13. Udskudte trinfremspring/trappe uden stødtrin (dvs. åbne trappetrin).</item>
+    <item name="C14">C14. Gelænder mangler/findes kun i en side.</item>
 
-    <string name="C15">C15. For kort gelænder (skal fortsætte 30 cm før/efter trappe) og/eller afbrudt gelænder, der ikke følger med trappeafsatsen rundt.</string>
-    <string name="C16">C16. For højt/lavt placeret gelænder. (højere/lavere end intervallet 80 til 90 cm).</string>
-    <string name="C17">C17. Manglende taktil markering af trappe på gangareal.</string>
+    <item name="C15">C15. For kort gelænder (skal fortsætte 30 cm før/efter trappe) og/eller afbrudt gelænder, der ikke følger med trappeafsatsen rundt.</item>
+    <item name="C16">C16. For højt/lavt placeret gelænder. (højere/lavere end intervallet 80 til 90 cm).</item>
+    <item name="C17">C17. Manglende taktil markering af trappe på gangareal.</item>
 
-    <string name="C18">C18. Visuelt mønster på trappens belægning som camouflerer trappetrinnene.</string>
-    <string name="C19">C19. Dårlig/ujævn/blændende belysning af gangareal og/eller gelænder.</string>
+    <item name="C18">C18. Visuelt mønster på trappens belægning som camouflerer trappetrinnene.</item>
+    <item name="C19">C19. Dårlig/ujævn/blændende belysning af gangareal og/eller gelænder.</item>
 
-    <string name="C20">Køkken, vaskerum, grovkøkken\n\nGælder indretning og udstyr, inklusiv vaskemaskine og tørretumbler, selv om de er placeret i badeværelset. Udstyr i fælles vaskerum vurderes IKKE, men at komme til/ind i vaskerummet vurderes dels generelt i sektion A, dels i C86.\n\nC20. Utilstrækkelig plads til manøvrering ved hårde hvidevarer/opbevaringsenheder (betjeningsområdet er under 150 cm foran disse). Utilstrækkelig plads pga. møblering vurderes under C5.</string>
+    <item name="C20">Køkken, vaskerum, grovkøkken\n\nGælder indretning og udstyr, inklusiv vaskemaskine og tørretumbler, selv om de er placeret i badeværelset. Udstyr i fælles vaskerum vurderes IKKE, men at komme til/ind i vaskerummet vurderes dels generelt i sektion A, dels i C86.\n\nC20. Utilstrækkelig plads til manøvrering ved hårde hvidevarer/opbevaringsenheder (betjeningsområdet er under 150 cm foran disse). Utilstrækkelig plads pga. møblering vurderes under C5.</item>
 
-    <string name="C21">C21. Hylder/vægskabe højt placeret (laveste hylde mere end 150 cm over gulv).</string>
-    <string name="C22">C22. Der mangler et arbejdsområde i en passende højde til siddende arbejde (85 cm eller lavere kræves).\nGælder fast inventar men ikke møbler. Benplads vurderes ved C24.</string>
-    <string name="C23">C23. For lavt arbejdsområde til stående arbejde (84 cm eller lavere).\nGælder fast inventar men ikke møbler.</string>
+    <item name="C21">C21. Hylder/vægskabe højt placeret (laveste hylde mere end 150 cm over gulv).</item>
+    <item name="C22">C22. Der mangler et arbejdsområde i en passende højde til siddende arbejde (85 cm eller lavere kræves).\nGælder fast inventar men ikke møbler. Benplads vurderes ved C24.</item>
+    <item name="C23">C23. For lavt arbejdsområde til stående arbejde (84 cm eller lavere).\nGælder fast inventar men ikke møbler.</item>
 
-    <string name="C24">C24. Arbejdsområde med benplads mangler (mindst 68 cm i højden, 60 cm i dybde og 80 cm i bredde).\nGælder fast inventar men ikke møbler.</string>
-    <string name="C25">C25. For dybt arbejdsområde (mere end 60 cm).</string>
-    <string name="C26">C26. For dybe hylder (mere end 30 cm). Dybere hylder kræver udtrækbar/drejbar indsats. Markeres, hvis over 50% af underskabe og høje skabe er for dybe og ikke indrettet sådan.</string>
-    <string name="C27">C27. Komfur med almindelige kogeplader.</string>
-    <string name="C28">C28. Glaskeramisk komfur eller lign.</string>
-    <string name="C29">C29. Døre med svingområder (inderdøre) der forringer tilgængeligheden til opbevaringsplads.</string>
-    <string name="C30">C30. Utilstrækkelig/da°rligt udformet/placeret belysning af arbejdsomra°der, bordplade, vask og opbevaringsplads.</string>
+    <item name="C24">C24. Arbejdsområde med benplads mangler (mindst 68 cm i højden, 60 cm i dybde og 80 cm i bredde).\nGælder fast inventar men ikke møbler.</item>
+    <item name="C25">C25. For dybt arbejdsområde (mere end 60 cm).</item>
+    <item name="C26">C26. For dybe hylder (mere end 30 cm). Dybere hylder kræver udtrækbar/drejbar indsats. Markeres, hvis over 50% af underskabe og høje skabe er for dybe og ikke indrettet sådan.</item>
+    <item name="C27">C27. Komfur med almindelige kogeplader.</item>
+    <item name="C28">C28. Glaskeramisk komfur eller lign.</item>
+    <item name="C29">C29. Døre med svingområder (inderdøre) der forringer tilgængeligheden til opbevaringsplads.</item>
+    <item name="C30">C30. Utilstrækkelig/da°rligt udformet/placeret belysning af arbejdsomra°der, bordplade, vask og opbevaringsplads.</item>
 
-    <string name="C31">C31. De respektive barrierer i miljøet markeres, hvis en eller flere faste funktioner i køkken/ grovkøkken/vaskerum skaber problemer (udstyr i fælles vaskerum vurderes ikke).\n\nC31. Ulogisk udformede betjeningsanordninger. Ikke indbygget mikrobølgeovn skal IKKE vurderes.</string>
-    <string name="C32">C32. Der skal bruges mange kræfter til at aktivere betjeningsanordninger.</string>
-    <string name="C33">C33. Betjeningsanordninger er følsomme eller lette at aktivere.</string>
-    <string name="C34">C34. Det kræver intakt finmotorik at anvende betjeningsanordningerne.</string>
-    <string name="C35">C35. Meget små betjeningsanordninger.</string>
-    <string name="C36">C36. Meget store betjeningsanordninger.</string>
-    <string name="C37">C37. Det er nødvendigt at vride i håndledet.</string>
-    <string name="C38">C38. Kræver komplekse manøvrer (mere end et moment og en bevægelse) og god præcision.</string>
-    <string name="C39">C39. Det er nødvendigt at bruge begge hænder.</string>
-    <string name="C40">C40. Anvendelse kræver håndfunktion.</string>
-    <string name="C41">C41. Anvendelse kræver fingerfunktion (dvs. isolerede greb, f.eks. pincet- og lateralgreb).</string>
+    <item name="C31">C31. De respektive barrierer i miljøet markeres, hvis en eller flere faste funktioner i køkken/ grovkøkken/vaskerum skaber problemer (udstyr i fælles vaskerum vurderes ikke).\n\nC31. Ulogisk udformede betjeningsanordninger. Ikke indbygget mikrobølgeovn skal IKKE vurderes.</item>
+    <item name="C32">C32. Der skal bruges mange kræfter til at aktivere betjeningsanordninger.</item>
+    <item name="C33">C33. Betjeningsanordninger er følsomme eller lette at aktivere.</item>
+    <item name="C34">C34. Det kræver intakt finmotorik at anvende betjeningsanordningerne.</item>
+    <item name="C35">C35. Meget små betjeningsanordninger.</item>
+    <item name="C36">C36. Meget store betjeningsanordninger.</item>
+    <item name="C37">C37. Det er nødvendigt at vride i håndledet.</item>
+    <item name="C38">C38. Kræver komplekse manøvrer (mere end et moment og en bevægelse) og god præcision.</item>
+    <item name="C39">C39. Det er nødvendigt at bruge begge hænder.</item>
+    <item name="C40">C40. Anvendelse kræver håndfunktion.</item>
+    <item name="C41">C41. Anvendelse kræver fingerfunktion (dvs. isolerede greb, f.eks. pincet- og lateralgreb).</item>
 
-    <string name="C42">C42. Betjeningsanordninger sidder højt/utilgængeligt (over 120 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor andel (cirka %) af alle betjeningsanordninger, der er problematisk placeret.</string>
+    <item name="C42">C42. Betjeningsanordninger sidder højt/utilgængeligt (over 120 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor andel (cirka %) af alle betjeningsanordninger, der er problematisk placeret.</item>
 
-    <string name="C43">C43. Betjeningsanordninger er lavt placeret (under 80 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor andel (cirka %) af alle betjeningsanordninger, der er problematisk placeret.</string>
+    <item name="C43">C43. Betjeningsanordninger er lavt placeret (under 80 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor andel (cirka %) af alle betjeningsanordninger, der er problematisk placeret.</item>
 
-    <string name="C44">Badeværelse\n\nC44. Utilstrækkelig plads til manøvrering hvor det er nødvendigt at vende (under 150 cm x 150 cm.).</string>
-    <string name="C45">C45. Utilstrækkelig plads til badebænk eller tilsvarende, eller andre problemer i bruser/bad.</string>
-    <string name="C46">C46. Der mangler støttegreb ved bruser/bad og/eller toilet.</string>
+    <item name="C44">Badeværelse\n\nC44. Utilstrækkelig plads til manøvrering hvor det er nødvendigt at vende (under 150 cm x 150 cm.).</item>
+    <item name="C45">C45. Utilstrækkelig plads til badebænk eller tilsvarende, eller andre problemer i bruser/bad.</item>
+    <item name="C46">C46. Der mangler støttegreb ved bruser/bad og/eller toilet.</item>
 
-    <string name="C47">C47. Støttegreb er svære at nå/uhensigtsmæssigt placeret (gælder ikke højde, men f.eks. indeklemt eller på anden måde dårlig placering).\nGælder alle typer støttegreb, også armstøtter ved toilet.</string>
-    <string name="C48">C48. Støttegreb højt placeret (over 90 cm).</string>
-    <string name="C49">C49. Støttegreb lavt placeret (under 80 cm).</string>
-    <string name="C50">Betjeningsanordninger i badeværelset omfatter faste funktioner, f.eks. vandhaner, greb til badeværelsesskabe mm. Betjeningsanordninger på vaskemaskine/ tørretumbler vurderes under det afsnit, hvor udstyret vurderes.\n\nC50. Ulogisk udformede betjeningsanordninger.</string>
-    <string name="C51">C51. Der skal bruges mange kræfter til aktivering af betjeningsanordninger.</string>
-    <string name="C52">C52. Betjeningsanordninger er meget følsomme/ lette at aktivere.</string>
-    <string name="C53">C53. Anvendelse af betjeningsanordninger kræver intakt finmotorik. Gælder finmotorisk, sammensat ”manipulation”, jf. C 41.</string>
-    <string name="C54">C54. Meget sma° betjeningsanordninger.</string>
-    <string name="C55">C55. Meget store betjeningsanordninger.</string>
-    <string name="C56">C56. Det er nødvendigt at vride i ha°ndleddet.</string>
-    <string name="C57">C57. Der kræves komplekse manøvrer (mere end et moment og en bevægelse) samt god præcision.</string>
-    <string name="C58">C58. Det er nødvendigt at bruge begge hænder.</string>
-    <string name="C59">C59. Det er nødvendigt at bruge ha°ndfunktion.</string>
-    <string name="C60">C60. Anvendelse kræver fingerfunktion (dvs. isolerede greb, f.eks. pincet- og lateralgreb).</string>
+    <item name="C47">C47. Støttegreb er svære at nå/uhensigtsmæssigt placeret (gælder ikke højde, men f.eks. indeklemt eller på anden måde dårlig placering).\nGælder alle typer støttegreb, også armstøtter ved toilet.</item>
+    <item name="C48">C48. Støttegreb højt placeret (over 90 cm).</item>
+    <item name="C49">C49. Støttegreb lavt placeret (under 80 cm).</item>
+    <item name="C50">Betjeningsanordninger i badeværelset omfatter faste funktioner, f.eks. vandhaner, greb til badeværelsesskabe mm. Betjeningsanordninger på vaskemaskine/ tørretumbler vurderes under det afsnit, hvor udstyret vurderes.\n\nC50. Ulogisk udformede betjeningsanordninger.</item>
+    <item name="C51">C51. Der skal bruges mange kræfter til aktivering af betjeningsanordninger.</item>
+    <item name="C52">C52. Betjeningsanordninger er meget følsomme/ lette at aktivere.</item>
+    <item name="C53">C53. Anvendelse af betjeningsanordninger kræver intakt finmotorik. Gælder finmotorisk, sammensat ”manipulation”, jf. C 41.</item>
+    <item name="C54">C54. Meget sma° betjeningsanordninger.</item>
+    <item name="C55">C55. Meget store betjeningsanordninger.</item>
+    <item name="C56">C56. Det er nødvendigt at vride i ha°ndleddet.</item>
+    <item name="C57">C57. Der kræves komplekse manøvrer (mere end et moment og en bevægelse) samt god præcision.</item>
+    <item name="C58">C58. Det er nødvendigt at bruge begge hænder.</item>
+    <item name="C59">C59. Det er nødvendigt at bruge ha°ndfunktion.</item>
+    <item name="C60">C60. Anvendelse kræver fingerfunktion (dvs. isolerede greb, f.eks. pincet- og lateralgreb).</item>
 
-    <string name="C61">C61. Betjeningsanordninger er højt/utilgængeligt placeret (over 120 cm. over gulv).\n\nGælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor en andel (cirka %) af alle betjeningsanordninger, der er problematisk placeret.</string>
-    <string name="C62">C62. Betjeningsanordninger er lavt placeret (under 80 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor en andel (cirka %) afalle betjeningsanordninger, der er problematisk placeret.</string>
-    <string name="C63">C63. Håndvask placeret i en højde velegnet for stående (overkant 81 cm over gulv eller højere).</string>
-    <string name="C64">C64. Toilettet er 41 cm eller lavere. Inklusive sæde.</string>
-    <string name="C65">C65. Toilettet er 42 cm eller højere. Inklusive sæde.</string>
-    <string name="C66">C66. Utilstrækkelig benplads under håndvask (fri dybde til væg minimum 60 cm, fri bredde minimum 80 cm, set i forhold vaskens udformning, vandlås etc.).</string>
-    <string name="C67">C67. Spejl placeret i højde for stående (underkanten højere end 90 cm over gulv).</string>
-    <string name="C68">C68. Toiletpapirholder er utilgængeligt placeret (over 40 cm fra toilettet, anden højde end 80 cm over gulv, placeret på væggen bag toilettet etc.).</string>
-    <string name="C69">C69. Opbevaringsskabe, håndklædeholder etc. er placeret for højt/lavt (anden højde end intervallet 90 til 120 cm over gulv).</string>
-    <string name="C70">C70. Brusekabine med kanter/niveauforskel (over 0 mm). Blød gummikant, som tillader passage med mobilitetshjælpemiddel på hjul, accepteres.</string>
-    <string name="C71">C71. Badekar i stedet for brusekabine.</string>
+    <item name="C61">C61. Betjeningsanordninger er højt/utilgængeligt placeret (over 120 cm. over gulv).\n\nGælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor en andel (cirka %) af alle betjeningsanordninger, der er problematisk placeret.</item>
+    <item name="C62">C62. Betjeningsanordninger er lavt placeret (under 80 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer etc. Notér, hvor stor en andel (cirka %) afalle betjeningsanordninger, der er problematisk placeret.</item>
+    <item name="C63">C63. Håndvask placeret i en højde velegnet for stående (overkant 81 cm over gulv eller højere).</item>
+    <item name="C64">C64. Toilettet er 41 cm eller lavere. Inklusive sæde.</item>
+    <item name="C65">C65. Toilettet er 42 cm eller højere. Inklusive sæde.</item>
+    <item name="C66">C66. Utilstrækkelig benplads under håndvask (fri dybde til væg minimum 60 cm, fri bredde minimum 80 cm, set i forhold vaskens udformning, vandlås etc.).</item>
+    <item name="C67">C67. Spejl placeret i højde for stående (underkanten højere end 90 cm over gulv).</item>
+    <item name="C68">C68. Toiletpapirholder er utilgængeligt placeret (over 40 cm fra toilettet, anden højde end 80 cm over gulv, placeret på væggen bag toilettet etc.).</item>
+    <item name="C69">C69. Opbevaringsskabe, håndklædeholder etc. er placeret for højt/lavt (anden højde end intervallet 90 til 120 cm over gulv).</item>
+    <item name="C70">C70. Brusekabine med kanter/niveauforskel (over 0 mm). Blød gummikant, som tillader passage med mobilitetshjælpemiddel på hjul, accepteres.</item>
+    <item name="C71">C71. Badekar i stedet for brusekabine.</item>
 
-    <string name="C72">Øvrige betjeningsanordninger (bortset fra dem i køkken og badeværelse som vurderes under de respektive afsnit). Gælder vindues- og dørbeslag, lås, stikkontakter og andre faste installationer.\n\nC72. Ulogisk udformet betjeningsanordninger.</string>
-    <string name="C73">C73. Der skal bruges mange kræfter til, at aktivere betjeningsanordningerne.</string>
-    <string name="C74">C74. Betjeningsanordningerne er meget følsomme eller lette at aktivere.</string>
-    <string name="C75">C75. Anvendelse af betjeningsanordningerne kræver intakt finmotorik. Gælder finmotorisk, sammensat ”manipulation”, Jf. C 41.</string>
-    <string name="C76">C76. Meget små betjeningsanordninger.</string>
-    <string name="C77">C77. Meget store betjeningsanordninger.</string>
-    <string name="C78">C78. Det er nødvendigt at vride i håndleddet.</string>
-    <string name="C79">C79. Komplekse manøvrer (mere end et moment og en bevægelse) samt god præcision kræves.</string>
-    <string name="C80">C80. Det er nødvendigt at bruge begge hænder.</string>
-    <string name="C81">C81. Håndfunktion kræves.</string>
-    <string name="C82">C82. Anvendelse kræver fingerfunktion (dvs. isolerede greb,f.eks. pincet- og lateralgreb) kræves.</string>
-    <string name="C83">C83. Betjeningsanordninger er højt placeret (mere end 120 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer, etc. Notér, hvor stor en andel (cirka %) afalle betjeningsanordninger, der er problematisk placeret.</string>
+    <item name="C72">Øvrige betjeningsanordninger (bortset fra dem i køkken og badeværelse som vurderes under de respektive afsnit). Gælder vindues- og dørbeslag, lås, stikkontakter og andre faste installationer.\n\nC72. Ulogisk udformet betjeningsanordninger.</item>
+    <item name="C73">C73. Der skal bruges mange kræfter til, at aktivere betjeningsanordningerne.</item>
+    <item name="C74">C74. Betjeningsanordningerne er meget følsomme eller lette at aktivere.</item>
+    <item name="C75">C75. Anvendelse af betjeningsanordningerne kræver intakt finmotorik. Gælder finmotorisk, sammensat ”manipulation”, Jf. C 41.</item>
+    <item name="C76">C76. Meget små betjeningsanordninger.</item>
+    <item name="C77">C77. Meget store betjeningsanordninger.</item>
+    <item name="C78">C78. Det er nødvendigt at vride i håndleddet.</item>
+    <item name="C79">C79. Komplekse manøvrer (mere end et moment og en bevægelse) samt god præcision kræves.</item>
+    <item name="C80">C80. Det er nødvendigt at bruge begge hænder.</item>
+    <item name="C81">C81. Håndfunktion kræves.</item>
+    <item name="C82">C82. Anvendelse kræver fingerfunktion (dvs. isolerede greb,f.eks. pincet- og lateralgreb) kræves.</item>
+    <item name="C83">C83. Betjeningsanordninger er højt placeret (mere end 120 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer, etc. Notér, hvor stor en andel (cirka %) afalle betjeningsanordninger, der er problematisk placeret.</item>
 
-    <string name="C84">C84. Betjeningsanordninger lavt placeret (under 80 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer, etc. Notér, hvor stor en andel (cirka %) afalle betjeningsanordninger, der er problematisk placeret.</string>
+    <item name="C84">C84. Betjeningsanordninger lavt placeret (under 80 cm over gulv). Gælder kontakter, eludtag, greb til skabe og skuffer, etc. Notér, hvor stor en andel (cirka %) afalle betjeningsanordninger, der er problematisk placeret.</item>
 
-    <string name="C85">Øvrige faciliteter i boligen\n\nTilgængelighed via adgangsstier etc. udendørs vurderes under udendørs miljø. Indendørs trapper vurderes under C8 – C19.\n\nBemærk, at adgangsstier, der er vurderet under tidligere afsnit, IKKE skal vurderes her igen.\n\nC85. Opbevaringsrum kan kun nås ved at forcere trappetrin/dørtrin/anden niveauforskel (over 15 mm).</string>
-    <string name="C86">C86. Vaskerum kan kun nås ved at forcere trappetrin/dørtrin/anden niveauforskel (over 15 mm.).</string>
-    <string name="C87">C87. Uhensigtsmæssig udformning af dør til vaskerum (under 87 cm, for tung etc.).</string>
+    <item name="C85">Øvrige faciliteter i boligen\n\nTilgængelighed via adgangsstier etc. udendørs vurderes under udendørs miljø. Indendørs trapper vurderes under C8 – C19.\n\nBemærk, at adgangsstier, der er vurderet under tidligere afsnit, IKKE skal vurderes her igen.\n\nC85. Opbevaringsrum kan kun nås ved at forcere trappetrin/dørtrin/anden niveauforskel (over 15 mm).</item>
+    <item name="C86">C86. Vaskerum kan kun nås ved at forcere trappetrin/dørtrin/anden niveauforskel (over 15 mm.).</item>
+    <item name="C87">C87. Uhensigtsmæssig udformning af dør til vaskerum (under 87 cm, for tung etc.).</item>
     <!--- Questions -->
 </string-array>
 </resources>
